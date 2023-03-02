@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Open Heart</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="bg-white w-screen h-44 md:h-80 z-0 header flex items-around md:justify-around justify-center border-b-4 border-black"
+    >
+      <!-- img and navbar -->
+      <div class="hidden md:flex justify-between items-center w-1/4">
+        <div class="xl:text-2xl">
+          <ul
+            class="hidden md:flex flex-col lg:grid grid-cols-2 grid-row-2 gap-x-4 md:max-lg:pl-4 md:max-lg:border-l-4 border-black"
+          >
+            <li class="py-4 hover:text-gold hover:font-bold w-48">
+              <a href="#about">
+                <img
+                  src="./img/handshake.png"
+                  alt="about-us"
+                  class="w-10 h-10 inline-block"
+                />
+                <span class="px-4">About</span>
+              </a>
+            </li>
+            <li class="py-4 hover:text-gold hover:font-bold w-48">
+              <a href="#donation">
+                <img
+                  src="./img/money.png"
+                  alt="donation"
+                  class="w-10 h-10 inline-block"
+                /><span class="px-4">Donate</span>
+              </a>
+            </li>
+            <li class="py-4 hover:text-gold hover:font-bold w-48">
+              <a href="#volunteer">
+                <img
+                  src="./img/love.png"
+                  alt="volunteer"
+                  class="w-10 h-10 inline-block"
+                /><span class="px-4">Volunteer</span>
+              </a>
+            </li>
+            <li class="py-4 hover:text-gold hover:font-bold w-48">
+              <a href="#vet" class="">
+                <img
+                  src="./img/vet.png"
+                  alt="vet"
+                  class="w-10 h-10 inline-block"
+                /><span class="px-4">Veterinary</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- main dogo img -->
+      <img src="./img/dogo.jpg" alt="dog" class="mx-20 py-2 hidden md:flex" />
+
+      <!-- logo -->
+      <div class="flex flex-col justify-center items-center w-1/4">
+        <img
+          src="./img/veterinary.png"
+          class="w-20 h-20 z-50 mx-20"
+          alt="logo"
+        />
+        <h1 class="text-4xl uppercase text-center font-bold px-4">
+          Open Heart
+        </h1>
+      </div>
+      <!-- logo ends -->
+    </header>
+    <!-- main -->
+    <main class="main">
+      <div class="mx-auto flex justify-center">
+        <!-- donation info -->
+        <div
+          class="relative flex flex-col md:flex-row items-center max-[640px]:hidden"
+        >
+          <div
+            class="font-bold border-4 mx-10 border-red border-gold p-4 text-2xl mt-10 mb-4 md:my-16"
+          >
+            <p>
+              We raised <span class="text-4xl text-gold"> $10.000</span> this
+              month!
+            </p>
+          </div>
+          <button
+            class="w-fit px-10 py-4 md:-mr-20 rounded-full bg-gold hover:bg-black hover:scale-110 text-white border-none active:bg-gold active:scale-100"
+            id="donation-btn"
+          >
+            Donate
+          </button>
+        </div>
+
+        <!-- donnation btn for small screens -->
+        <button
+          class="min-[641px]:hidden w-fit px-10 py-4 bg-gold rounded-full mt-10 font-bold text-2xl hover:bg-black hover:scale-110 hover:text-white active:bg-gold active:scale-100"
+          id="donation-btn"
+        >
+          Donate
+        </button>
+        <!-- popup window about donation -->
+
+        <div
+          class="hidden flex-col items-center justify-center w-11/12 xl:w-1/2 h-1/2 bg-gold px-10 absolute top-1/2 md:top-2/3 rounded-full"
+          id="donation-popup"
+        >
+          <h2 class="xl:text-4xl text-2xl font-bold mt-8">
+            Thank you for your kindness!
+          </h2>
+          <form class="flex flex-col items-center xl:text-2xl text-xl">
+            <label for="amount" class="mt-4 mb-2"
+              >How much do you want to donate?</label
+            >
+            <input
+              type="text"
+              autocomplete="off"
+              name="amount"
+              placeholder="Your donation is"
+              class="placeholder:pl-4 xl:py-2 text-black rounded-full"
+            />
+            <label for="donationName" class="mt-4 mb-2">Your name</label>
+            <input
+              type="text"
+              autocomplete="off"
+              name="donationName"
+              placeholder="Your name is"
+              class="placeholder:pl-4 xl:py-2 text-black rounded-full"
+            />
+            <a href="#"
+              ><button
+                type="submit"
+                class="w-fit my-2 px-4 py-2 my-4 bg-black rounded-full text-white hover:bg-white hover:text-black hover:scale-110 active:bg-black active:text-white active:scale-100"
+              >
+                Send
+              </button></a
+            >
+          </form>
+        </div>
+      </div>
+
+      <!-- section about us -->
+      <section id="about">
+        <div
+          class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
+        >
+          <div class="flex items-center bg-black">
+            <img src="./img/dog.jpg" alt="dog" class="w-1/2" />
+            <div class="border-l-4 border-white my-8">
+              <h2 class="text-4xl text-gold my-4 pl-4">Who we are</h2>
+              <p class="text-2xl text-white my-2 mx-4 w-11/12">
+                We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, voluptate voluptates amet iste quaerat debitis!
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex w-2/3 justify-center text-2xl mx-auto">
+            <ul class="list-disc space-y-4">
+              <li>Helped to adopt 150 dogs</li>
+              <li>Saved 1000+ lifes</li>
+              <li>Taking care of 300+ dogs</li>
+              <li>Educate the public about dogs</li>
+              <li>Collaborating with foster houses</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- donation section -->
+      <section id="donation">
+        <div
+          class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
+        >
+          <div class="hidden lg:flex w-2/3 justify-center text-2xl mx-auto">
+            <ul class="list-disc space-y-4">
+              <li>Spent on veterinary more than $100.000</li>
+              <li>Raised more then $300.000</li>
+              <li>Our dogs eat healthy food</li>
+              <li>Spent on additional staff more than $80.000</li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-row-reverse justify-between items-center w-fit bg-black"
+          >
+            <img src="./img/dog4.jpg" alt="dog" class="w-2/5 mx-8" />
+            <div class="border-r-4 border-white my-8">
+              <h2
+                class="text-4xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+              >
+                Donation
+              </h2>
+              <p
+                class="text-2xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+              >
+                We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, voluptate voluptates amet iste quaerat debitis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- volunteer section -->
+      <section id="volunteer">
+        <div
+          class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
+        >
+          <div class="flex items-center w-fit bg-black">
+            <img src="./img/volunteer.jpg" alt="dog" class="w-1/2" />
+            <div class="border-l-4 border-white my-8">
+              <h2 class="text-4xl text-gold my-4 pl-4">Volunteerig</h2>
+              <p class="text-2xl text-white my-2 ml-4 pr-2 w-11/12">
+                We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, voluptate voluptates amet iste quaerat debitis!
+              </p>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex w-2/3 justify-center text-2xl mx-auto">
+            <ul class="list-disc space-y-4">
+              <li>Set up more than 30 meetings with our dogs</li>
+              <li>Scheduled 3 open-days weekly</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- vet section -->
+      <section id="vet" class="border-black border-b-4">
+        <div
+          class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
+        >
+          <div class="hidden lg:flex w-2/3 justify-center text-2xl mx-auto">
+            <ul class="list-disc space-y-4">
+              <li>Saved 1000+ lifes</li>
+              <li>Taking care of 300+ dogs</li>
+              <li>Our dogs eat healthy food</li>
+              <li>We have a few veterinarians in our team</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-row-reverse items-center w-fit bg-black">
+            <img src="./img/dog-hungry.jpg" alt="dog" class="w-72" />
+            <div class="border-r-4 border-white my-8">
+              <h2
+                class="text-4xl text-right text-gold my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+              >
+                Veterinary
+              </h2>
+              <p
+                class="text-2xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+              >
+                We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, voluptate voluptates amet iste quaerat debitis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Invitation -->
+      <div
+        class="relative w-3/5 text-center my-20 md:w-11/12 xl:w-1/2 mx-auto border-y-2 border-b-8 border-gold py-4 px-10 rounded-full"
+      >
+        <h2 class="text-4xl text-center py-4">Come and visit us!</h2>
+        <p class="hidden lg:block text-2xl mx-4 text-center">
+          Our dogs will Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. In nostrum enim quo, corrupti at ex! Debitis vitae esse
+          temporibus nisi?
+        </p>
+        <p class="lg:hidden text-2xl text-center">You will not regret!</p>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div
+          class="w-screen flex justify-around items-center bg-white h-fit border-t-4 border-black pt-8 pb-4"
+        >
+          <!-- contact form -->
+          <div class="w-fit text-center my-4">
+            <h2>Let's know each other!</h2>
+            <form class="flex flex-col items-center">
+              <label for="name" class="my-2 border-b border-black"
+                >Your name</label
+              >
+              <input
+                type="text"
+                placeholder="Your name"
+                name="name"
+                autocomplete="off"
+                class="bg-goldGray placeholder:px-4 placeholder:text-black border-2 border-gold rounded-full"
+              />
+
+              <label for="email" class="my-2 border-b border-black"
+                >Your email</label
+              >
+              <input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                autocomplete="off"
+                class="bg-goldGray placeholder:px-4 placeholder:text-black border-2 border-gold rounded-full"
+              />
+
+              <button
+                type="submit"
+                class="w-20 h-10 bg-black text-white rounded-full my-4 hover:bg-gold hover:scale-110 active:scale-100 active:hover-black"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+          <!-- form ends -->
+
+          <!-- ending doggo -->
+          <img src="./img/dog2.jpg" alt="doggo" class="hidden lg:block" />
+
+          <!-- menu-links -->
+          <div class="">
+            <ul class="list-disc">
+              <li class="py-4 hover:text-gold hover:font-bold w-48">
+                <a href="#about"> About </a>
+              </li>
+              <li class="py-4 hover:text-gold hover:font-bold w-48">
+                <a href="#donation"> Donate </a>
+              </li>
+              <li class="py-4 hover:text-gold hover:font-bold w-48">
+                <a href="#volunteer"> Volunteer </a>
+              </li>
+              <li class="py-4 hover:text-gold hover:font-bold w-48">
+                <a href="#vet" class=""> Veterinary </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- JS Files -->
+    <script src="./index.js"></script>
+  </body>
+</html>
