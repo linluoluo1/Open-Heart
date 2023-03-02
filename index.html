@@ -147,13 +147,16 @@
       <!-- section about us -->
       <section id="about">
         <div
-          class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
+          class="lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
         >
-          <div class="flex items-center bg-black">
+          <div class="flex max-[500px]:flex-col items-center bg-black">
             <img src="./img/dog.jpg" alt="dog" class="w-1/2" />
-            <div class="border-l-4 border-white my-8">
-              <h2 class="text-4xl text-gold my-4 pl-4">Who we are</h2>
-              <p class="text-2xl text-white my-2 mx-4 w-11/12">
+            <div class="min-[500px]:border-l-4 border-white my-8">
+              <h2 class="text-4xl max-[499px]:text-center text-gold my-4 pl-4">
+             <span class="text-white min-[499px]:hidden">&#149</span>
+                Who we are
+              </h2>
+              <p class="text-2xl text-white my-2 mx-4 w-11/12 max-[499px]:text-left">
                 We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, voluptate voluptates amet iste quaerat debitis!
               </p>
@@ -177,7 +180,7 @@
         <div
           class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
         >
-          <div class="hidden lg:flex w-2/3 justify-center text-2xl mx-auto">
+          <div class="hidden lg:flex  w-2/3 justify-center text-2xl mx-auto">
             <ul class="list-disc space-y-4">
               <li>Spent on veterinary more than $100.000</li>
               <li>Raised more then $300.000</li>
@@ -187,17 +190,17 @@
           </div>
 
           <div
-            class="flex flex-row-reverse justify-between items-center w-fit bg-black"
+            class="flex flex-row-reverse max-[500px]:flex-col justify-between items-center w-fit bg-black"
           >
             <img src="./img/dog4.jpg" alt="dog" class="w-2/5 mx-8" />
-            <div class="border-r-4 border-white my-8">
+            <div class="min-[500px]:border-r-4 border-white my-8">
               <h2
-                class="text-4xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
-              >
+                class="text-4xl min-[500px]:text-right text-center text-gold my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+              >  <span class="text-white min-[499px]:hidden">&#149</span>
                 Donation
               </h2>
               <p
-                class="text-2xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+                class="text-2xl text-right text-white my-4 pr-4  mx-4 pl-2 w-11/12 max-[500px]:text-left"
               >
                 We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, voluptate voluptates amet iste quaerat debitis!
@@ -212,11 +215,11 @@
         <div
           class="flex lg:grid grid-cols-2 justify-items-center items-center px-4 lg:px-0 my-10 box-border w-screen"
         >
-          <div class="flex items-center w-fit bg-black">
+          <div class="flex max-[500px]:flex-col items-center w-fit bg-black">
             <img src="./img/volunteer.jpg" alt="dog" class="w-1/2" />
-            <div class="border-l-4 border-white my-8">
-              <h2 class="text-4xl text-gold my-4 pl-4">Volunteerig</h2>
-              <p class="text-2xl text-white my-2 ml-4 pr-2 w-11/12">
+            <div class="min-[500px]:border-l-4 border-white my-8">
+              <h2 class="text-4xl text-gold my-4 pl-4 max-[500px]:text-center">  <span class="text-white min-[499px]:hidden">&#149</span>Volunteerig</h2>
+              <p class="text-2xl text-white my-2 mx-4 pr-2 w-11/12 max-[500px]:text-left">
                 We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, voluptate voluptates amet iste quaerat debitis!
               </p>
@@ -248,16 +251,16 @@
             </ul>
           </div>
 
-          <div class="flex flex-row-reverse items-center w-fit bg-black">
+          <div class="flex max-[500px]:flex-col flex-row-reverse items-center w-fit bg-black">
             <img src="./img/dog-hungry.jpg" alt="dog" class="w-72" />
-            <div class="border-r-4 border-white my-8">
+            <div class="min-[500px]:border-r-4 border-white my-8">
               <h2
-                class="text-4xl text-right text-gold my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
-              >
+                class="text-4xl text-right text-gold my-4 pr-4 my-2 mr-4 pl-2 w-11/12 max-[500px]:text-center"
+              ><span class="text-white min-[499px]:hidden">&#149</span>
                 Veterinary
               </h2>
               <p
-                class="text-2xl text-right text-white my-4 pr-4 my-2 mr-4 pl-2 w-11/12"
+                class="text-2xl text-right text-white my-4 pr-4 mx-4 pl-2 w-11/12 max-[500px]:text-left"
               >
                 We are Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, voluptate voluptates amet iste quaerat debitis!
@@ -269,9 +272,9 @@
 
       <!-- Invitation -->
       <div
-        class="relative w-3/5 text-center my-20 md:w-11/12 xl:w-1/2 mx-auto border-y-2 border-b-8 border-gold py-4 px-10 rounded-full"
+        class="max-[499px]:hidden relative w-3/5 text-center my-20 md:w-11/12 xl:w-1/2 mx-auto border-y-2 border-b-8 border-gold py-4 px-10 rounded-full"
       >
-        <h2 class="text-4xl text-center py-4">Come and visit us!</h2>
+        <h2 class="text-4xl text-center py-4 ">Come and visit us!</h2>
         <p class="hidden lg:block text-2xl mx-4 text-center">
           Our dogs will Lorem ipsum dolor sit, amet consectetur adipisicing
           elit. In nostrum enim quo, corrupti at ex! Debitis vitae esse
@@ -282,7 +285,7 @@
       <!-- footer -->
       <footer>
         <div
-          class="w-screen flex justify-around items-center bg-white h-fit border-t-4 border-black pt-8 pb-4"
+          class="w-screen flex justify-around items-center bg-white h-fit max-[500px]:border-t-4 border-black pt-8 pb-4"
         >
           <!-- contact form -->
           <div class="w-fit text-center my-4">
@@ -324,19 +327,19 @@
           <img src="./img/dog2.jpg" alt="doggo" class="hidden lg:block" />
 
           <!-- menu-links -->
-          <div class="">
-            <ul class="list-disc">
+          <div >
+            <ul class="text-center">
               <li class="py-4 hover:text-gold hover:font-bold w-48">
-                <a href="#about"> About </a>
+                <a href="#about"> <span class="text-black mr-4">&#149</span>About </a>
               </li>
               <li class="py-4 hover:text-gold hover:font-bold w-48">
-                <a href="#donation"> Donate </a>
+                <a href="#donation"><span class="text-black mr-4">&#149</span> Donate </a>
               </li>
               <li class="py-4 hover:text-gold hover:font-bold w-48">
-                <a href="#volunteer"> Volunteer </a>
+                <a href="#volunteer"><span class="text-black mr-4">&#149</span> Volunteer </a>
               </li>
               <li class="py-4 hover:text-gold hover:font-bold w-48">
-                <a href="#vet" class=""> Veterinary </a>
+                <a href="#vet" > <span class="text-black mr-4">&#149</span>Veterinary </a>
               </li>
             </ul>
           </div>

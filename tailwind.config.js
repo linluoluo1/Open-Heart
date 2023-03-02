@@ -8,7 +8,6 @@ module.exports = {
         goldGray: "#f2dca5"
       }
     },
-
   },
   plugins: [],
 }
